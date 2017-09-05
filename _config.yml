@@ -14,20 +14,24 @@ markdown: kramdown
 
 
 ### content configuration ###
-title:       "SinglePaged - Simple Jekyll template"
-keywords:    "SinglePaged, jekyll, template, github, blog, single page"
-description: "A single-page template for Jekyll based blogs (like what you'd use on github pages!)"
-source_link: "https://github.com/t413/SinglePaged"
+title:       "CECIL"
+keywords:    "CECIL, compétition, competition, université, laval, university"
+description: "Site web officiel du CECIL"
+source_link: "https://cecilul.github.io"
 favicon:     "img/favicon.ico"
 touch_icon:  "img/apple-touch-icon.png"
-google_analytics_key: UA-49607422-1 ## put YOUR key here to enable tracking! (blank to disable)
+google_analytics_key: ## put YOUR key here to enable tracking! (blank to disable)
 
+### Contact ###
+email: test@test.com
+slack: http://example.com
+facebook: http://example.com
 
 ### template colors, used site-wide via css ###
 colors:
   black:     '#111111'
   white:     '#f8f8f8'
-  blue:      '#49a7e9'
+  red:       '#941907'
   green:     '#9bcf2f'
   purple:    '#c869bf'
   orange:    '#fab125'
