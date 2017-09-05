@@ -508,10 +508,18 @@ html { box-sizing: border-box; }
   
   
   
-  nav .p-contact { border-color: #fab125; }
-  #contact { background-color: #fab125 !important; color: #111111; }
-  #contact a { color: #111111; }
-  #contact .sectiondivider { color: #fab125; }
+  nav .p-contact { border-color: #941907; }
+  #contact { background-color: #941907 !important; color: #f8f8f8; }
+  #contact a { color: #f8f8f8; }
+  #contact .sectiondivider { color: #941907; }
+
+  
+  
+  
+  nav .p-participation { border-color: #fab125; }
+  #participation { background-color: #fab125 !important; color: #111111; }
+  #participation a { color: #111111; }
+  #participation .sectiondivider { color: #fab125; }
 
   
   
