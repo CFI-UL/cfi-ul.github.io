@@ -1,6 +1,6 @@
-# cecilul.github.io
+# cpi-ul.github.io
 
-CECILUL website.
+CPI-UL website.
 
 
 ## requirements
