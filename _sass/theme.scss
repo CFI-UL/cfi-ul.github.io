@@ -1,4 +1,65 @@
-@import "theme/_reset";
+@import '../node_modules/avalanche-css/avalanche';
+
 @import "theme/_base";
 @import "theme/constants";
 @import "theme/mixins";
+
+body {
+  margin: 0;
+  @include base-font(initial);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-transform: uppercase;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 12px;
+  padding-left: 12px;
+  width: 100%;
+}
+
+@media #{map-get($av-breakpoints, desk)} {
+  .container {
+    max-width: 900px;
+  }
+}
+
+.text {
+  @include base-font($space-unit);
+}
+
+.site {
+
+  &__header {
+    background: $lightgrey;
+    padding: $space-unit;
+    font-size: 2em;
+    font-weight: $font-bold;
+  }
+
+  &__main {
+    padding: $space-unit 0;
+  }
+
+  &__footer {
+    padding: $space-unit;
+  }
+
+  &__title {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+.grid-sandbox {
+  padding: 20px;
+  margin-bottom: 2em;
+  margin-top: 5px;
+}

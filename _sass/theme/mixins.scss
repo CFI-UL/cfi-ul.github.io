@@ -1,6 +1,6 @@
 @import "constants";
 
-@mixin base-font() {
+@mixin base-font ($line-height) {
   font-family: $font-family;
-  line-height: 24px;
+  line-height: $line-height;
 }
