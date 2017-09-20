@@ -1,12 +1,18 @@
 title: Compétitions et pratiques informatique de l’universite Laval
 title_short: CPI-UL
 description: >
-  Compétitions et pratiques informatique de l’universite Laval.
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean congue enim
-  ac arcu elementum eleifend. Donec magna quam, lacinia ac ornare nec, pharetra
-  non velit. Praesent sollicitudin porttitor dolor ac bibendum.
-slack: spyvscat5
-github: CECILUL
+  Nous sommes un groupe de passionnés en informatique qui se sont regroupés pour
+  participer aux différentes compétitions dans notre domaine. Si vous êtes
+  étudiants et que vous avez un intérêt en informatique, venez faire un tour et
+  il nous fera plaisir de vous guider pour exploiter votre plein potentiel!
+description_suite: >
+  Le groupe a été créé en septembre 2017 par des étudiants qui veulent voir leur
+  université briller parmi les autres! Connectez-vous sur notre Slack pour être
+  à l’affut de tout ce qui se passe à l’intérieur du club! Soit nos formations,
+  ateliers, conférences et tout autre événement que nos membres proposent ou
+  veulent participer!
+slack:
+github: 
 
 # If you want to link only specific pages in your header, uncomment
 # this and add the path to the pages in order as they should show up
