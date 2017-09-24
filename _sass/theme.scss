@@ -25,6 +25,10 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
 }
 
+.section {
+  padding-top: 36px;
+}
+
 @media #{map-get($av-breakpoints, desk)} {
   .container {
     max-width: 900px;
@@ -45,7 +49,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   &__main {
-    padding: $space-unit 0;
+    // padding: $space-unit 0;
   }
 
   &__footer {
