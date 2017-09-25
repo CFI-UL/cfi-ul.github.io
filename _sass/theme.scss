@@ -17,6 +17,14 @@ h1, h2, h3, h4, h5, h6 {
   box-sizing: border-box;
 }
 
+ul {
+  padding-left: 2em;
+}
+
+li {
+  padding: 4px 0;
+}
+
 .container {
   margin-right: auto;
   margin-left: auto;
@@ -72,4 +80,15 @@ h1, h2, h3, h4, h5, h6 {
   padding: 20px;
   margin-bottom: 2em;
   margin-top: 5px;
+}
+
+.hall-of-fame-list {
+  &-item {
+    &__event {
+      padding: 0 4px;
+    }
+    &__position {
+      padding: 0 4px;
+    }
+  }
 }
