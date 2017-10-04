@@ -16,7 +16,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  text-align: center;
+  // text-align: center;
   margin: 72px 0;
 }
 
@@ -41,7 +41,7 @@ li {
 }
 
 .section {
-  padding-bottom: 72px;
+  padding-bottom: 36px;
 }
 
 @media #{map-get($av-breakpoints, desk)} {
