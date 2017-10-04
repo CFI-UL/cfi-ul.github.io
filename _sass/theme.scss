@@ -11,6 +11,13 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
+  font-weight: normal;
+  margin: 36px 0;
+}
+
+h1 {
+  text-align: center;
+  margin: 72px 0;
 }
 
 * {
@@ -22,7 +29,7 @@ ul {
 }
 
 li {
-  padding: 4px 0;
+  padding: 6px 0;
 }
 
 .container {
@@ -34,7 +41,7 @@ li {
 }
 
 .section {
-  padding-top: 36px;
+  padding-bottom: 72px;
 }
 
 @media #{map-get($av-breakpoints, desk)} {
@@ -51,17 +58,19 @@ li {
 
   &__header {
     background: $lightgrey;
-    padding: $space-unit;
-    font-size: 2em;
-    font-weight: $font-bold;
+    padding: 16px;
+    font-size: 1.4em;
+    // font-weight: $font-regular;
   }
 
   &__main {
-    padding-bottom: $space-unit * 2;
+    // padding-bottom: $space-unit * 2;
+    padding: 16px 0;
   }
 
   &__footer {
-    padding: $space-unit;
+    // padding: $space-unit;
+    // padding: 36px;
   }
 
   &__title {
