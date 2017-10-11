@@ -1,80 +1,129 @@
 ---
 layout: default
 ---
-<div class="container">
-  <div class="grid">
-    <div class="grid__cell section">
-      <h1>{{ site.title | escape }}</h1>
-      <p class="text">{{ site.description }}</p>
-      <p class="text">{{ site.description_suite }}</p>
+<div class="section-hero section section_dark section_full-view-port">
+  <div class="section-hero__content container container_medium">
+    <img class="section-hero__logo logo" src="assets/images/logo.png">
+    <h1 class="section-hero__title">
+      Compétitions et formations informatiques de l’université laval
+    </h1>
+    <a href="#about" class="button button_primary button_round">En savoir plus</a>
+  </div>
+</div>
+
+<div id="about" class="section-about section section_color section_full-view-port">
+  <div class="section-about__content container container_small">
+    <h2 class="section__title">
+      Qui sommes nous?
+    </h2>
+    <p class="paragraph">
+      Nous sommes un groupe de passionnés en informatique qui se sont regroupés pour participer aux différentes compétitions dans notre domaine. Si vous êtes étudiants et que vous avez un intérêt en informatique, venez faire un tour et il nous fera plaisir de vous guider pour exploiter votre plein potentiel!
+    </p>
+    <p class="paragraph">
+      Le groupe a été créé en septembre 2017 par des étudiants qui veulent voir leur université briller parmi les autres! Connectez-vous sur notre Slack pour être à l’affut de tout ce qui se passe à l’intérieur du club! Soit nos formations, ateliers, conférences et tout autre événement que nos membres proposent ou veulent participer!
+    </p>
+  </div>
+</div>
+
+<div id="events" class="section-events section section_white">
+  <div class="section-events__content container container_small">
+    <h2 class="section__title">
+      Événements
+    </h2>
+    <div class="section-events__events">
+      <a href="https://hackfest.ca/" class="section-events__event">
+        <span class="section-events__event-title">Hackfest</span>
+        <span class="section-events__event-year">2018</span>
+      </a>
+      <a href="https://csgames.org/corpo/" class="section-events__event">
+        <span class="section-events__event-title">CSGames</span>
+        <span class="section-events__event-year">2018</span>
+      </a>
     </div>
-    <div class="grid__cell section">
-      <h2>Événements à venir</h2>
-      <ul>
-        <li><a href="https://hackfest.ca/">Hackfest 2017</a></li>
-        <li><a href="https://csgames.org/">CSGames 2018</a></li>
-      </ul>
-    </div>
-    <div class="grid__cell section">
-      <h2>Temple de la renommée</h2>
+  </div>
+</div>
+
+<div id="hall-of-fame" class="section-hall-of-fame section section_color">
+  <div class="section-hall-of-fame__content container container_small">
+    <h2 class="section__title">
+      Temple de la renommée
+    </h2>
+
+    <ul class="hall-of-fame-list">
+      <li>
+        <div class="hall-of-fame-list-item">
+          <span class="hall-of-fame-list-item__event">iHack 2017</span>
+          <span class="hall-of-fame-list-item__position">7ème position</span>
+        </div>
+      </li>
+      <li>
+        <div class="hall-of-fame-list-item">
+          <span class="hall-of-fame-list-item__event">NorthSec 2017</span>
+          <span class="hall-of-fame-list-item__position">34ème position</span>
+        </div>
+      </li>
+      <li>
+        <div class="hall-of-fame-list-item">
+          <span class="hall-of-fame-list-item__event">CSGames 2017</span>
+          <span class="hall-of-fame-list-item__position">9ème position</span>
+        </div>
+      </li>
       <ul class="hall-of-fame-list">
-        <li>
-          <div class="hall-of-fame-list-item">
-            <span class="hall-of-fame-list-item__event">iHack 2017</span>
-            <span class="hall-of-fame-list-item__position">7ème position</span>
-          </div>
+        <li class="hall-of-fame-list-item">
+          <span class="hall-of-fame-list-item__event">Sécurité</span>
+          <span class="hall-of-fame-list-item__position">1ère position</span>
         </li>
-        <li>
-          <div class="hall-of-fame-list-item">
-            <span class="hall-of-fame-list-item__event">NorthSec 2017</span>
-            <span class="hall-of-fame-list-item__position">34ème position</span>
-          </div>
+        <li class="hall-of-fame-list-item">
+          <span class="hall-of-fame-list-item__event">Reverse engineering</span>
+          <span class="hall-of-fame-list-item__position">2ème position</span>
         </li>
-        <li>
-          <div class="hall-of-fame-list-item">
-            <span class="hall-of-fame-list-item__event">CSGames 2017</span>
-            <span class="hall-of-fame-list-item__position">9ème position</span>
-          </div>
+        <li class="hall-of-fame-list-item">
+          <span class="hall-of-fame-list-item__event">Informatique théorique</span>
+          <span class="hall-of-fame-list-item__position">3ème position</span>
         </li>
-        <ul class="hall-of-fame-list">
-          <li class="hall-of-fame-list-item">
-            <span class="hall-of-fame-list-item__event">Sécurité</span>
-            <span class="hall-of-fame-list-item__position">1ère position</span>
-          </li>
-          <li class="hall-of-fame-list-item">
-            <span class="hall-of-fame-list-item__event">Reverse engineering</span>
-            <span class="hall-of-fame-list-item__position">2ème position</span>
-          </li>
-          <li class="hall-of-fame-list-item">
-            <span class="hall-of-fame-list-item__event">Informatique théorique</span>
-            <span class="hall-of-fame-list-item__position">3ème position</span>
-          </li>
-          <li class="hall-of-fame-list-item">
-            <span class="hall-of-fame-list-item__event">CSE - Reverse engineering</span>
-            <span class="hall-of-fame-list-item__position">3ème position</span>
-          </li>
-        </ul>
-        <li>
-          <div class="hall-of-fame-list-item">
-            <span class="hall-of-fame-list-item__event">iHack 2016</span>
-            <span class="hall-of-fame-list-item__position">2ème position</span>
-          </div>
-        </li>
-        <li>
-          <div class="hall-of-fame-list-item">
-            <span class="hall-of-fame-list-item__event">Hackfest 2016</span>
-            <span class="hall-of-fame-list-item__position">16ème position</span>
-          </div>
+        <li class="hall-of-fame-list-item">
+          <span class="hall-of-fame-list-item__event">CSE - Reverse engineering</span>
+          <span class="hall-of-fame-list-item__position">3ème position</span>
         </li>
       </ul>
-    </div>
-    <div class="grid__cell section">
-      <h2>Où nous trouver</h2>
-      <div class="contact-list">
-        <a class="contact-list__item" href="https://www.facebook.com/groups/281680249003676/">Facebook</a>
-        <a class="contact-list__item" href="https://slackin-cfi-ul.herokuapp.com/">Slack</a>
-        <a class="contact-list__item" href="https://github.com/CFI-UL/">GitHub</a>
-      </div>
+      <li>
+        <div class="hall-of-fame-list-item">
+          <span class="hall-of-fame-list-item__event">iHack 2016</span>
+          <span class="hall-of-fame-list-item__position">2ème position</span>
+        </div>
+      </li>
+      <li>
+        <div class="hall-of-fame-list-item">
+          <span class="hall-of-fame-list-item__event">Hackfest 2016</span>
+          <span class="hall-of-fame-list-item__position">16ème position</span>
+        </div>
+      </li>
+    </ul>
+
+  </div>
+</div>
+
+
+<div id="sponsors" class="section-sponsors section section_white">
+  <div class="section-sponsors__content container container_small">
+    <h2 class="section__title">
+      Commanditaires
+    </h2>
+    <p class="paragraph">
+      À venir...
+    </p>
+  </div>
+</div>
+
+<div id="contact" class="section-contact section section_dark">
+  <div class="section-contact__content container container_small">
+    <h2 class="section__title">
+      Contact
+    </h2>
+    <div class="section-contact__social-buttons">
+      <a class="section-contact__social-button button button_secondary button_square" href="https://www.facebook.com/groups/281680249003676/">Facebook</a>
+      <a class="section-contact__social-button button button_secondary button_square" href="https://slackin-cfi-ul.herokuapp.com/">Slack</a>
+      <a class="section-contact__social-button button button_secondary button_square" href="https://github.com/CFI-UL/">GitHub</a>
     </div>
   </div>
 </div>

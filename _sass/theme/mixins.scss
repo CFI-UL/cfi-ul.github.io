@@ -1,6 +1,14 @@
 @import "constants";
 
-@mixin base-font ($line-height) {
+@mixin base-font () {
   font-family: $font-family;
-  line-height: $line-height;
+  // line-height: $line-height;
+}
+
+@mixin border-radius ($radius) {
+  border-radius: $radius;
+}
+
+@mixin gradient {
+  background: linear-gradient(90deg, $tanhide, $mandy);
 }

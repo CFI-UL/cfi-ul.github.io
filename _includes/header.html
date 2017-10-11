@@ -1,7 +1,16 @@
-<header class="site__header" role="banner">
-  <div class="container">
+<header class="site-header" role="banner">
+  <div class="container container_large site-header__content">
     {% assign default_paths = site.pages | map: "path" %}
     {% assign page_paths = site.header_pages | default: default_paths %}
-    <a class="site__title" href="{{ "/" | relative_url }}">{{ site.title_short | escape }}</a>
+    <a href="#">
+      <img class="logo site-header__logo" src="assets/images/logo.png" alt="{{ site.title_short | escape }}">
+    </a>
+    <div class="site-header__links">
+      <a href="#about">Qui sommes nous?</a>
+      <a href="#events">Événements</a>
+      <a href="#hall-of-fame">Temple de la renommée</a>
+      <a href="#sponsors">Commanditaires</a>
+      <a href="#contact">Contact</a>
+    </div>
   </div>
 </header>
