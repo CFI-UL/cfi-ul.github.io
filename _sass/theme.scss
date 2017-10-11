@@ -1,4 +1,4 @@
-@import '../node_modules/avalanche-css/avalanche';
+// @import '../node_modules/avalanche-css/avalanche';
 
 @import "theme/_base";
 @import "theme/constants";
@@ -6,18 +6,7 @@
 
 body {
   margin: 0;
-  @include base-font(initial);
-}
-
-h1, h2, h3, h4, h5, h6 {
-  text-transform: uppercase;
-  font-weight: normal;
-  margin: 36px 0;
-}
-
-h1 {
-  // text-align: center;
-  margin: 72px 0;
+  @include base-font;
 }
 
 * {
@@ -32,72 +21,258 @@ li {
   padding: 6px 0;
 }
 
+////////////////////////////////////////////////////////////////////////////////
+
+.logo {
+  @include border-radius($radius-image);
+}
+
+.paragraph {
+  @include base-font;
+  line-height: 21px;
+  font-size: 14px;
+  font-weight: $font-light;
+}
+
+.button {
+  @include base-font;
+  font-size: 16px;
+  font-weight: $font-medium;
+  cursor: pointer;
+  text-decoration: none;
+
+  &_primary {
+    background: $outerspace;
+    color: $white;
+    border: 1px solid $white;
+    padding: 14px 38px;
+  }
+
+  &_secondary {
+    background: $salmon;
+    color: $white;
+    padding: 8px 24px;
+    font-size: 14px;
+    letter-spacing: 0.79px;
+  }
+
+  &_round {
+    @include border-radius($radius-button-round);
+  }
+
+  &_square {
+    @include border-radius($radius-button-square);
+  }
+}
+
 .container {
   margin-right: auto;
   margin-left: auto;
   padding-right: 12px;
   padding-left: 12px;
   width: 100%;
-}
-
-.section {
-  padding-bottom: 36px;
-}
-
-@media #{map-get($av-breakpoints, desk)} {
-  .container {
+  height: 100%;
+  &_small {
+    max-width: 600px;
+  }
+  &_medium {
     max-width: 900px;
   }
+  &_large {
+    max-width: 1440px;
+  }
 }
 
-.text {
-  @include base-font($space-unit);
+////////////////////////////////////////////////////////////////////////////////
+
+.site-main {
+
 }
 
-.site {
+.site-header {
+  background: $codgray;
+  color: $white;
+  height: $site-header-height;
+  position: fixed;
+  width: 100%;
 
-  &__header {
-    background: $lightgrey;
-    padding: 16px;
-    font-size: 1.4em;
-    // font-weight: $font-regular;
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
   }
 
-  &__main {
-    // padding-bottom: $space-unit * 2;
-    padding: 16px 0;
+  &__links {
+    a {
+      @include base-font;
+      // line-height: $space-unit;
+      font-size: 16px;
+      font-weight: $font-bold;
+      color: $white;
+      text-decoration: none;
+      padding-right: $space-unit * 2;
+    }
+  }
+  &__logo {
+    height: $space-unit * 2;
+  }
+}
+
+.site-footer {
+  background: $codgray;
+  color: $white;
+  height: $site-header-height;
+
+  &__content {
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+  }
+}
+
+////////////////////////////////////////////////////////////////////////////////
+
+.section {
+  padding: $site-header-height 0;
+
+  &_full-view-port {
+    height: calc(100vh + #{$site-header-height});
   }
 
-  &__footer {
-    // padding: $space-unit;
-    // padding: 36px;
+  &_dark {
+    background: $outerspace;
+    color: $white;
+  }
+
+  &_white {
+    background: $white;
+    color: $tundora;
+  }
+
+  &_color {
+    @include gradient;
+    color: $white;
   }
 
   &__title {
+    @include base-font;
+    font-size: 32px;
+    font-weight: $font-bold;
+  }
+}
+
+//////////////////////////////////////////////
+
+.section-about {
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.section-events {
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  &__events {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  &__event {
+    @include gradient;
+    @include border-radius(10px);
+    display: block;
+    margin: $space-unit;
+    height: $space-unit * 6;
+    width: $space-unit * 6;
+    color: $white;
     text-decoration: none;
-    color: inherit;
+    font-size: 24px;
+    font-weight: $font-medium;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  &__event-title {}
+  &__event-year {}
+}
+
+.section-hall-of-fame {
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 }
 
-.contact-list {
-  &__item {
-    padding-right: 8px;
+.section-sponsors {
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 }
 
-.grid-sandbox {
-  padding: 20px;
-  margin-bottom: 2em;
-  margin-top: 5px;
+.section-contact {
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  &__social-buttons {
+    display: flex;
+  }
+  &__social-button {
+    margin: 0 16px;
+  }
 }
 
-.hall-of-fame-list {
-  &-item {
-    &__event {
-      padding: 0 4px;
-    }
-    &__position {
-      padding: 0 4px;
-    }
+
+//////////////////////////////////////////////
+
+.section-hero {
+
+  &__logo {
+    height: $space-unit * 8;
+  }
+
+  &__title {
+    @include base-font;
+    text-transform: uppercase;
+    font-size: 32px;
+    font-weight: $font-bold;
+    text-align: center;
+    color: $white;
+    margin: ($space-unit * 2) 0;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+////////////////////////////////////////////////////////////////////////////////
+
+@media screen and (max-width: 1025px) {
+  .site-header__links {
+    display: none;
   }
 }
