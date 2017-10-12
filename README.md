@@ -1,6 +1,6 @@
-# cpi-ul.github.io
+# cfi-ul.github.io
 
-CPI-UL website.
+CFI-UL website.
 
 
 ## requirements
