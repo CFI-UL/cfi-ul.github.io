@@ -2,12 +2,9 @@
   <div class="container container_large site-header__content">
     {% assign default_paths = site.pages | map: "path" %}
     {% assign page_paths = site.header_pages | default: default_paths %}
-    <a class="site-header__title" href="#">
-      CFI
+    <a href="#">
+      <img class="logo site-header__logo" src="assets/images/CFI-logo-05.png" alt="{{ site.title_short | escape }}">
     </a>
-    <!-- <a href="#">
-      <img class="logo site-header__logo" src="assets/images/logo.png" alt="{{ site.title_short | escape }}">
-    </a> -->
     <div class="site-header__links">
       <a href="#about">Qui sommes nous?</a>
       <a href="#events">Événements</a>
