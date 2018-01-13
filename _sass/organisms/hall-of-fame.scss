@@ -1,0 +1,13 @@
+@import "../utils/constants";
+@import "../utils/mixins";
+
+.hall-of-fame {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;  
+}
+
+.hall-of-fame-list {
+  list-style-type: disc;
+}
