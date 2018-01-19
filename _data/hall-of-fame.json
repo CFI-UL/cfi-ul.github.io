@@ -1,0 +1,50 @@
+[
+  {
+    "name": "iHack",
+    "year": "2017",
+    "position": "7ème position",
+    "url": ""
+  },
+  {
+    "name": "NorthSec",
+    "year": "2017",
+    "position": "34ème position",
+    "url": ""
+  },
+  {
+    "name": "CSGames",
+    "year": "2017",
+    "position": "9ème position",
+    "url": "",
+    "sub-positions": [
+      {
+        "name": "Sécurité",
+        "position": "1ère position"
+      },
+      {
+        "name": "Reverse engineering",
+        "position": "2ème position"
+      },
+      {
+        "name": "Informatique théorique",
+        "position": "3ème position"
+      },
+      {
+        "name": "CSE - Reverse engineering",
+        "position": "3ème position"
+      }
+    ]
+  },
+  {
+    "name": "iHack",
+    "year": "2016",
+    "position": "2ème position",
+    "url": ""
+  },
+  {
+    "name": "Hackfest",
+    "year": "2016",
+    "position": "16ème position",
+    "url": ""
+  }
+]

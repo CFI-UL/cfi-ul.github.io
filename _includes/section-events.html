@@ -4,14 +4,12 @@
       Événements
     </h2>
     <div class="section-events__events">
-      <a href="https://hackfest.ca/" class="section-events__event">
-        <span class="section-events__event-title">Hackfest</span>
-        <span class="section-events__event-year">2018</span>
+      {% for event in site.data.events %}
+      <a href="{{ event.url }}" class="section-events__event">
+        <span class="section-events__event-title">{{ event.name }}</span>
+        <span class="section-events__event-year">{{ event.year }}</span>
       </a>
-      <a href="https://csgames.org/corpo/" class="section-events__event">
-        <span class="section-events__event-title">CSGames</span>
-        <span class="section-events__event-year">2018</span>
-      </a>
+      {% endfor %}
     </div>
   </div>
 </div>

@@ -4,54 +4,24 @@
       Temple de la renommée
     </h2>
     <ul class="hall-of-fame-list">
+      {% for fame in site.data.hall-of-fame %}
       <li>
         <div>
-          <span>iHack 2017</span>
-          <span>7ème position</span>
+          <span>{{ fame.name }} {{ fame.year }}</span>
+          <span>{{ fame.position }}</span>
         </div>
+        {% if fame.sub-positions[0] %}
+        <ul class="hall-of-fame-list">
+          {% for sub-position in fame.sub-positions %}
+            <li>
+              <span>{{ sub-position.name }}</span>
+              <span>{{ sub-position.position }}</span>
+            </li>
+          {% endfor %}
+        </ul>
+        {% endif %}
       </li>
-      <li>
-        <div>
-          <span>NorthSec 2017</span>
-          <span>34ème position</span>
-        </div>
-      </li>
-      <li>
-        <div>
-          <span>CSGames 2017</span>
-          <span>9ème position</span>
-        </div>
-      </li>
-      <ul class="hall-of-fame-list">
-        <li>
-          <span>Sécurité</span>
-          <span>1ère position</span>
-        </li>
-        <li>
-          <span>Reverse engineering</span>
-          <span>2ème position</span>
-        </li>
-        <li>
-          <span>Informatique théorique</span>
-          <span>3ème position</span>
-        </li>
-        <li>
-          <span>CSE - Reverse engineering</span>
-          <span>3ème position</span>
-        </li>
-      </ul>
-      <li>
-        <div>
-          <span>iHack 2016</span>
-          <span>2ème position</span>
-        </div>
-      </li>
-      <li>
-        <div>
-          <span>Hackfest 2016</span>
-          <span>16ème position</span>
-        </div>
-      </li>
+      {% endfor %}
     </ul>
   </div>
 </div>
