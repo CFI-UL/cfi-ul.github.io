@@ -1,0 +1,39 @@
+@import "../utils/mixins";
+@import "../utils/constants";
+
+.section {
+  padding: $site-header-height 0;
+  
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  &_full-view-port {
+    height: calc(100vh + #{$site-header-height});
+  }
+
+  &_dark {
+    background: $outerspace;
+    color: $white;
+  }
+
+  &_white {
+    background: $white;
+    color: $tundora;
+  }
+
+  &_color {
+    @include gradient;
+    color: $white;
+  }
+
+  &__title {
+    @include base-font;
+    font-size: 32px;
+    font-weight: $font-bold;
+    margin: 32px 0;
+  }
+}

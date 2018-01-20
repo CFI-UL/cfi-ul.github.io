@@ -1,0 +1,10 @@
+@import "../utils/mixins";
+@import "../utils/constants";
+
+.paragraph {
+  @include base-font;
+  line-height: 21px;
+  font-size: 16px;
+  font-weight: $font-light;
+  margin: 16px 0;
+}

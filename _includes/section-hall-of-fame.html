@@ -1,0 +1,27 @@
+<div id="hall-of-fame" class="section section_color">
+  <div class="section__content container container_small hall-of-fame">
+    <h2 class="section__title">
+      Temple de la renommée
+    </h2>
+    <ul class="hall-of-fame-list">
+      {% for fame in site.data.hall-of-fame %}
+      <li class="hall-of-fame-list__item">
+        <div>
+          <span>{{ fame.name }} {{ fame.year }}</span>
+          <span>{{ fame.position }}</span>
+        </div>
+        {% if fame.sub-positions[0] %}
+        <ul class="hall-of-fame-list">
+          {% for sub-position in fame.sub-positions %}
+            <li class="hall-of-fame-list__item">
+              <span>{{ sub-position.name }}</span>
+              <span>{{ sub-position.position }}</span>
+            </li>
+          {% endfor %}
+        </ul>
+        {% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>

@@ -1,0 +1,11 @@
+@import "../utils/mixins";
+@import "../utils/constants";
+
+.section-contact {
+  &__social-buttons {
+    display: flex;
+  }
+  &__social-button {
+    margin: 0 16px;
+  }
+}
