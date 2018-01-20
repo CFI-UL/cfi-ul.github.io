@@ -1,0 +1,32 @@
+@import "../utils/mixins";
+@import "../utils/constants";
+
+$event__image-size: 150px;
+$event-color: $mercury;
+
+.event {
+  display: flex;
+  flex-direction: column;
+  margin: 16px;
+  border: 3px solid $event-color;
+  background: $event-color;
+  color: $black;
+  text-decoration: none;
+
+  &__image-container {
+    width: $event__image-size;
+    height: $event__image-size;
+    background: $white;
+    margin-bottom: 4px;
+    display: flex;
+    align-items: center;
+  }
+  &__image {
+    max-width: $event__image-size;
+    max-height: $event__image-size;
+  }
+
+  &__info {
+    text-align: center;
+  }
+}

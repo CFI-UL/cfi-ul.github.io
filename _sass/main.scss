@@ -18,14 +18,16 @@
   'atoms/buttons';
 
 // Molecules - re-usable components constructed from multiple atoms
-@import 'molecules/nav';
+@import
+  'molecules/nav',
+  'molecules/event';
 
 // Organisms - distinct sections made from a collection of molecules
 @import
   'organisms/header',
   'organisms/hall-of-fame',
+  'organisms/events-list',
   'organisms/footer';
 
 // Shame - temporary quick fixes and test code.
 @import 'shame/shame';
-

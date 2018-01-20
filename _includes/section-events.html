@@ -1,13 +1,16 @@
-<div id="events" class="section-events section section_white">
-  <div class="section__content section-events__content container container_small">
+<div id="next-events" class="section section_white">
+  <div class="section__content container container_small">
     <h2 class="section__title">
-      Événements
+      Prochains Événements
     </h2>
-    <div class="section-events__events">
+    <div class="events-list">
       {% for event in site.data.events %}
-      <a href="{{ event.url }}" class="section-events__event">
-        <span class="section-events__event-title">{{ event.name }}</span>
-        <span class="section-events__event-year">{{ event.year }}</span>
+      <a href="{{ event.url }}" class="event">
+        <div class="event__image-container">
+          <img class="event__image" src="{{ event.image }}" alt="Logo {{ event.name }}"/>
+        </div>
+        <span class="event__info">{{ event.name }}</span>
+        <span class="event__info">{{ event.year }}</span>
       </a>
       {% endfor %}
     </div>

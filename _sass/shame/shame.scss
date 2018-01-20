@@ -1,41 +1,6 @@
 @import "../utils/mixins";
 @import "../utils/constants";
 
-.section-events {
-  &__events {
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-  }
-  &__event {
-    @include gradient;
-    @include border-radius(10px);
-    
-    display: block;
-    margin: $space-unit;
-    height: $space-unit * 6;
-    width: $space-unit * 6;
-    color: $white;
-    text-decoration: none;
-    font-size: 24px;
-    font-weight: $font-medium;
-    
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-}
-
-ul {
-  padding-left: 2em;
-}
-
-li {
-  padding: 6px 0;
-}
-
 .section-contact {
   &__social-buttons {
     display: flex;

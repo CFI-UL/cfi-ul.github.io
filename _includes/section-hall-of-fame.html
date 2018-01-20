@@ -5,7 +5,7 @@
     </h2>
     <ul class="hall-of-fame-list">
       {% for fame in site.data.hall-of-fame %}
-      <li>
+      <li class="hall-of-fame-list__item">
         <div>
           <span>{{ fame.name }} {{ fame.year }}</span>
           <span>{{ fame.position }}</span>
@@ -13,7 +13,7 @@
         {% if fame.sub-positions[0] %}
         <ul class="hall-of-fame-list">
           {% for sub-position in fame.sub-positions %}
-            <li>
+            <li class="hall-of-fame-list__item">
               <span>{{ sub-position.name }}</span>
               <span>{{ sub-position.position }}</span>
             </li>
