@@ -1,0 +1,36 @@
+body {
+  background-color: $color-black;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-family-title;
+  color: $color-white;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: $font-bold;
+  letter-spacing: 0.75px;
+  line-height: 44px;
+}
+
+h2 {
+  font-size: 18px;
+  font-weight: $font-bold;
+  letter-spacing: 1px;
+  line-height: 30px;
+}
+
+p {
+  font-family: $font-family-text;
+  font-weight: $font-regular;
+  font-size: 14px;
+  color: $color-white;
+  line-height: 25px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}

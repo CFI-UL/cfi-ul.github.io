@@ -1,36 +1,24 @@
 // Colours
-$mercury: #e8e8e8;
-$codgray: #0A0A0A;
-$mandy: #EB4C6A;
-$tanhide: #FA8861;
-$outerspace: #2E3A42;
-$tundora: #4A4A4A;
-$salmon: #FB8861;
-$white: #FFFFFF;
-$sunglo: #e66765;
-$alizarin: #e7302a;
-
-$black: black;
-$red: rgb(255, 51, 0);
-$yellow: rgb(255, 204, 0);
-$grey: rgb(204, 204, 204);
-$lightgrey: #f2f2f2;
-$blue: rgb(0, 153, 255);
+$color-black: #000;
+$color-white: #fff;
+$color-emperor: #4F4F4F;
 
 // Colours aliases
-$primary-color: white;
-$secondary-color: black;
+$primary-color: $color-black;
+$secondary-color: $color-white;
 
 // Spacings
 $space-unit: 24px;
 
 // Fonts
-$font-family: 'Roboto', sans-serif;
+$font-family-text: 'Karla-Regular', sans-serif;
+$font-family-title: 'Montserrat-Bold', sans-serif;
+
+/* Nous sommes un group: */
 $font-light: 300;
 $font-regular: 400;
 $font-medium: 500;
 $font-bold: 700;
-
 
 // Radiuses
 $radius-image: 4px;
@@ -38,4 +26,4 @@ $radius-button-round: 27px;
 $radius-button-square: 1px;
 
 // Other
-$site-header-height: $space-unit * 3;
+$max-width: 833px;

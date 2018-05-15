@@ -1,33 +1,10 @@
-// Vendors - external libraries
-@import
-  'vendor/reset';
+@import 'vendor/reset';
 
-// Utils - configuration and helpers
-@import
-  'utils/constants',
-  'utils/mixins',
-  'utils/section',
-  'utils/container';
+@import 'utils/constants';
+@import 'utils/mixins';
 
-// Atoms - high-level base styles
-@import
-  'atoms/base',
-  'atoms/paragraphs',
-  'atoms/images',
-  'atoms/links',
-  'atoms/buttons';
-
-// Molecules - re-usable components constructed from multiple atoms
-@import
-  'molecules/nav',
-  'molecules/event';
-
-// Organisms - distinct sections made from a collection of molecules
-@import
-  'organisms/header',
-  'organisms/hall-of-fame',
-  'organisms/events-list',
-  'organisms/footer';
-
-// Shame - temporary quick fixes and test code.
-@import 'shame/shame';
+@import 'base';
+@import 'atoms';
+@import 'molecules';
+@import 'organisms';
+@import 'templates';

@@ -1,0 +1,64 @@
+.landing {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+
+  &__image {
+    width: 285px;
+
+    @include breakpoint(tablet) {
+      width: 285px;
+    }
+  }
+}
+
+.section {
+  margin-top: 64px;
+  margin-bottom: 64px;
+
+  @include breakpoint(tablet) {
+    margin-top: 128px;
+    margin-bottom: 128px;
+  }
+
+  &__title {
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+
+  &__title, &__content {
+    margin-left: 16px;
+    margin-right: 16px;
+
+    @include breakpoint(tablet) {
+      margin-left: 32px;
+      margin-right: 32px;
+    }
+
+    @include breakpoint(laptop) {
+      margin-left: 64px;
+      margin-right: 64px;
+    }
+  }
+}
+
+
+.footer {
+  @include container;
+
+  &__content {
+    margin-left: 16px;
+    margin-right: 16px;
+
+    @include breakpoint(tablet) {
+      margin-left: 32px;
+      margin-right: 32px;
+    }
+
+    @include breakpoint(laptop) {
+      margin-left: 64px;
+      margin-right: 64px;
+    }
+  }
+}

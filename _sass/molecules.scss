@@ -1,0 +1,56 @@
+.menu {
+  @include breakpoint(mobileonly) {
+    display: none;
+  }
+
+  position: fixed;
+  right: 0;
+  text-align: right;
+
+  &__home {
+    display: inline-block;
+    font-family: $font-family-text;
+    font-weight: $font-bold;
+    color: $color-white;
+    font-size: 21px;
+    margin: 2px;
+  }
+
+  &__item {
+    display: inline-block;
+    font-family: $font-family-text;
+    font-weight: $font-bold;
+    color: $color-emperor;
+    font-size: 12px;
+    margin: 4px;
+
+    &_active {
+      color: $color-white;
+      border-bottom: 2px solid $color-white;
+    }
+  }
+}
+
+
+.social-bar {
+  position: fixed;
+  left: 0;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  margin-top: 16px;
+  margin-left: 16px;
+
+  &__item {
+    margin-bottom: 16px;
+    width: 24px;
+    height: 24px;
+    // TODO: remove the SCSS below.
+    border-radius: 100%;
+    background-color: $color-white;
+    color: $color-black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

@@ -1,6 +1,0 @@
-@import "../utils/mixins";
-@import "../utils/constants";
-
-.logo {
-  @include border-radius($radius-image);
-}
