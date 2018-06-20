@@ -33,6 +33,10 @@
 
 
 .social-bar {
+  @include breakpoint(mobileonly) {
+    display: none;
+  }
+
   position: fixed;
   left: 0;
   text-align: left;

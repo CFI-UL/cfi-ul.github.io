@@ -3,3 +3,16 @@
   color: $color-white;
   text-decoration: none;
 }
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: $font-family-title;
+  font-size: 12px;
+  font-weight: bold;
+  width: 148px;
+  height: 40px;
+  border: 1px solid $color-white;
+  color: $color-white;
+}
