@@ -1,0 +1,8 @@
+- name: slack
+  url: http://slack.cfiul.ca/
+- name: facebook
+  url: https://www.facebook.com/cfiul/
+- name: twitter
+  url: https://twitter.com/CFIUL/
+- name: github
+  url: https://github.com/CFI-UL/

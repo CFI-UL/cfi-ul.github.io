@@ -1,6 +1,10 @@
 <div class="social-bar">
-  <a class="social-bar__item" href="#">F</a>
-  <a class="social-bar__item" href="#">T</a>
-  <a class="social-bar__item" href="#">S</a>
-  <a class="social-bar__item" href="#">G</a>
+  {% for contact in site.data.contact %}
+    <a href="{{ contact.url }}">
+      <img
+        class="social-bar__item"
+        src="assets/images/{{ contact.name }}.png"
+        alt="{{ contact.name }}">
+    </a>
+  {% endfor %}
 </div>

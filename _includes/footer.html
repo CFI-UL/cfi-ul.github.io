@@ -1,5 +1,25 @@
 <footer class="footer">
   <div class="footer__content">
+    <div class="footer__sections">
+      <div class="footer__section-contact">
+        <h2>contact</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+      </div>
+      <div class="footer__section-social">
+        <h2>suivez-nous</h2>
+        <div class="footer__social-icons">
+          {% for contact in site.data.contact %}
+            <a href="{{ contact.url }}">
+              <img
+                class="footer__social-icon"
+                src="assets/images/{{ contact.name }}.png"
+                alt="{{ contact.name }}">
+            </a>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
     <p>
       © 2018 CFIUL
     </p>

@@ -52,6 +52,8 @@
   @include container;
 
   &__content {
+    display: flex;
+    flex-direction: column;
     margin-left: 16px;
     margin-right: 16px;
 
@@ -64,5 +66,34 @@
       margin-left: 64px;
       margin-right: 64px;
     }
+  }
+
+  &__sections {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  &__section-contact {
+    flex: 2;
+    padding-right: 30px;
+  }
+
+  &__section-social {
+    flex: 1;
+    padding-left: 30px;
+  }
+
+  &__social-icons {
+    padding-top: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__social-icon {
+    width: 32px;
+    height: 32px;
   }
 }

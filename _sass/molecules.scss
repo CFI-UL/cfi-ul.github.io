@@ -31,7 +31,6 @@
   }
 }
 
-
 .social-bar {
   @include breakpoint(mobileonly) {
     display: none;
@@ -47,14 +46,7 @@
 
   &__item {
     margin-bottom: 16px;
-    width: 24px;
-    height: 24px;
-    // TODO: remove the SCSS below.
-    border-radius: 100%;
-    background-color: $color-white;
-    color: $color-black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 32px;
+    height: 32px;
   }
 }
