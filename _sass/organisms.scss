@@ -96,4 +96,10 @@
     width: 32px;
     height: 32px;
   }
+
+  &__copyright {
+    font-size: 11px;
+    font-weight: $font-light;
+    color: $color-gray;
+  }
 }

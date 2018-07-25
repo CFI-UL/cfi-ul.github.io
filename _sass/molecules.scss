@@ -9,12 +9,12 @@
 }
 
 .menu {
-  @include breakpoint(mobileonly) {
-    display: none;
+  @include breakpoint(desktop) {
+    display: block;
   }
+  display: none;
 
   right: 0;
-  // padding-top: 16px;
   padding-right: 16px;
   text-align: right;
 
@@ -31,7 +31,7 @@
     display: inline-block;
     font-family: $font-family-text;
     font-weight: $font-bold;
-    color: $color-emperor;
+    color: $color-gray;
     font-size: 12px;
     margin: 4px;
 
@@ -43,13 +43,12 @@
 }
 
 .social-bar {
-  @include breakpoint(mobileonly) {
-    display: none;
+  @include breakpoint(desktop) {
+    display: flex;
   }
-
+  display: none;
   left: 0;
   text-align: left;
-  display: flex;
   flex-direction: column;
   margin-top: 16px;
   margin-left: 16px;
