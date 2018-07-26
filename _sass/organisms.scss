@@ -69,20 +69,29 @@
   }
 
   &__sections {
+    @include breakpoint(tablet) {
+      flex-direction: row;
+    }
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
   }
 
   &__section-contact {
-    flex: 2;
-    padding-right: 30px;
+    @include breakpoint(tablet) {
+      flex: 2;
+      padding-right: 30px;
+    }
+    padding-right: 0px;
   }
 
   &__section-social {
-    flex: 1;
-    padding-left: 30px;
+    @include breakpoint(tablet) {
+      flex: 1;
+      padding-left: 30px;
+    }
+    padding-left: 0px;
   }
 
   &__social-icons {
@@ -95,6 +104,7 @@
   &__social-icon {
     width: 32px;
     height: 32px;
+    margin-right: 16px;
   }
 
   &__copyright {
