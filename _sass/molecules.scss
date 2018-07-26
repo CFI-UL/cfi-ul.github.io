@@ -100,3 +100,17 @@
     color: $color-white;
   }
 }
+
+
+.hall-of-fame {
+  &__group {
+    border: 2px solid $color-white;
+    padding: 32px;
+    margin-bottom: 32px;
+  }
+
+  &__year {
+    background-color: $color-black;
+    padding-bottom: 32px;
+  }
+}
