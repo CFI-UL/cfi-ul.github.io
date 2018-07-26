@@ -75,9 +75,21 @@ layout: default
         <h4 class="hall-of-fame__title">
           {{ fame.name }}
         </h4>
-        <p>
+        <p class="hall-of-fame__position">
           {{ fame.position }}
-        </h4>
+        </p>
+        <div class="hall-of-fame__sub-positions">
+          {% for sub-position in fame.sub-positions %}
+            <div class="hall-of-fame__sub-position">
+              <div class="hall-of-fame__sub-position-name">
+                {{ sub-position.name }}
+              </div>
+              <div class="hall-of-fame__sub-position-position">
+                {{ sub-position.position }}
+              </div>
+            </div>
+          {% endfor %}
+        </div>
       </div>
     {% endfor %}
   </div>

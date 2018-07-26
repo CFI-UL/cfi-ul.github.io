@@ -77,7 +77,8 @@
     display: block;
     width: 119px;
     height: 119px;
-    border: 2px solid $color-white;
+    border: 3px solid $color-white;
+    border-radius: 2px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -104,13 +105,58 @@
 
 .hall-of-fame {
   &__group {
-    border: 2px solid $color-white;
+    margin-top: 32px;
+    margin-bottom: 16px;
+    border: 3px solid $color-white;
+    border-radius: 2px;
     padding: 32px;
     margin-bottom: 32px;
   }
 
   &__year {
-    background-color: $color-black;
     padding-bottom: 32px;
+  }
+
+  &__position {
+  }
+
+  &__sub-positions {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__sub-position {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    &::before {
+      content: "—";
+      color: $color-white;
+      padding-right: 4px;
+      padding-left: 8px;
+      @include breakpoint(phablet) {
+        padding-right: 16px;
+        padding-left: 24px;
+      }
+    }
+  }
+
+  &__sub-position-name {
+    flex: 4;
+    font-family: $font-family-text;
+    font-weight: $font-regular;
+    font-size: 14px;
+    color: $color-white;
+  }
+
+  &__sub-position-position {
+    flex: 3;
+    font-family: $font-family-text;
+    font-weight: $font-regular;
+    font-size: 14px;
+    color: $color-white;
   }
 }
