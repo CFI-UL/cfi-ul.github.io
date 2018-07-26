@@ -77,6 +77,7 @@
     display: block;
     width: 119px;
     height: 119px;
+    padding: 4px;
     border: 3px solid $color-white;
     border-radius: 2px;
     display: flex;
@@ -117,7 +118,29 @@
     padding-bottom: 32px;
   }
 
+  &__fame {
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+
+  &__title {
+    width: 100px;
+    margin-right: 16px;
+  }
+
   &__position {
+    font-family: "Karla-Regular", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #fff;
+    line-height: 25px;
   }
 
   &__sub-positions {
@@ -158,5 +181,14 @@
     font-weight: $font-regular;
     font-size: 14px;
     color: $color-white;
+  }
+}
+
+.sponsors {
+  &__actions {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
   }
 }

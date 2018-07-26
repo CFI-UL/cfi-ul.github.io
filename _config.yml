@@ -12,6 +12,9 @@ description_suite: >
   ateliers, conférences et tout autre événement que nos membres proposent ou
   veulent participer!
 
+sponsors_document_name: "Plan de commandite.pdf"
+sponsors_document_path: "assets/documents/2018 - Plan de commandite - FR.pdf"
+email:
 # If you want to link only specific pages in your header, uncomment
 # this and add the path to the pages in order as they should show up
 #header_pages:

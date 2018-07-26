@@ -72,12 +72,14 @@ layout: default
     </h2>
     {% for fame in hall_of_fame.items %}
       <div class="hall-of-fame__fame">
-        <h4 class="hall-of-fame__title">
-          {{ fame.name }}
-        </h4>
-        <p class="hall-of-fame__position">
-          {{ fame.position }}
-        </p>
+        <div class="hall-of-fame__info">
+            <h4 class="hall-of-fame__title">
+              {{ fame.name }}
+            </h4>
+            <div class="hall-of-fame__position">
+              {{ fame.position }}
+            </div>
+        </div>
         <div class="hall-of-fame__sub-positions">
           {% for sub-position in fame.sub-positions %}
             <div class="hall-of-fame__sub-position">
@@ -102,7 +104,12 @@ layout: default
   </h2>
   <div class="section__content">
     <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      Un partenariat avec le CFI nous permettrait de financer les activités pour nos membres tels que la participation à des compétitions. Vos contributions nous permettront aussi l'achat de matériel promotionnel dans le but de faire rayonner l'Université Laval dans le domaine de l'informatique.
     </p>
+    <div class="sponsors__actions">
+      <a href="{{ site.sponsors_document_path | relative_url }}" class="button">
+        {{ site.sponsors_document_name }}
+      </a>
+    </div>
   </div>
 </div>
