@@ -1,0 +1,208 @@
+.js_menu {
+  position: absolute;
+  top: calc(100vh + 132px);
+
+  &_sticky {
+    top: 0;
+    position: fixed;
+  }
+}
+
+.menu {
+  @include breakpoint(desktop) {
+    display: block;
+  }
+  display: none;
+
+  right: 0;
+  padding-right: 16px;
+  text-align: right;
+
+  &__home {
+    display: inline-block;
+    font-family: $font-family-text;
+    font-weight: $font-bold;
+    color: $color-white;
+    font-size: 21px;
+    margin: 2px;
+  }
+
+  &__item {
+    display: inline-block;
+    font-family: $font-family-text;
+    font-weight: $font-bold;
+    color: $color-gray;
+    font-size: 12px;
+    margin: 4px;
+
+    &_active {
+      color: $color-white;
+      border-bottom: 2px solid $color-white;
+    }
+  }
+}
+
+.social-bar {
+  @include breakpoint(desktop) {
+    display: flex;
+  }
+  display: none;
+  left: 0;
+  text-align: left;
+  flex-direction: column;
+  margin-top: 16px;
+  margin-left: 16px;
+
+  &__item {
+    margin-bottom: 16px;
+    width: 32px;
+    height: 32px;
+  }
+}
+
+.events {
+  margin-top: 32px;
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.event {
+  margin-right: 32px;
+  margin-bottom: 16px;
+
+  &__image-container {
+    display: block;
+    width: 119px;
+    height: 119px;
+    padding: 4px;
+    border: 3px solid $color-white;
+    background-color: $color-white;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__name {
+    display: block;
+    padding-top: 16px;
+    font-family: $font-family-text;
+    font-weight: $font-bold;
+    font-size: 16px;
+    color: $color-white;
+  }
+
+  &__date {
+    padding-top: 16px;
+    font-family: $font-family-text;
+    font-weight: $font-regular;
+    font-size: 14px;
+    color: $color-white;
+  }
+}
+
+
+.hall-of-fame {
+  &__group {
+    margin-top: 32px;
+    margin-bottom: 16px;
+    border: 3px solid $color-white;
+    border-radius: 2px;
+    padding: 32px;
+    margin-bottom: 32px;
+  }
+
+  &__year {
+    padding-bottom: 32px;
+  }
+
+  &__fame {
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+
+  &__title {
+    width: 100px;
+    margin-right: 16px;
+  }
+
+  &__position {
+    font-family: "Karla-Regular", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #fff;
+    line-height: 25px;
+  }
+
+  &__sub-positions {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__sub-position {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    &::before {
+      content: "—";
+      color: $color-white;
+      padding-right: 4px;
+      padding-left: 8px;
+      @include breakpoint(phablet) {
+        padding-right: 16px;
+        padding-left: 24px;
+      }
+    }
+  }
+
+  &__sub-position-name {
+    flex: 4;
+    font-family: $font-family-text;
+    font-weight: $font-regular;
+    font-size: 14px;
+    color: $color-white;
+  }
+
+  &__sub-position-position {
+    flex: 3;
+    font-family: $font-family-text;
+    font-weight: $font-regular;
+    font-size: 14px;
+    color: $color-white;
+  }
+}
+
+.sponsors {
+  &__actions {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.list {
+  margin-left: 2em;
+  list-style: disc;
+
+  &__item {
+    font-family: $font-family-text;
+    font-weight: $font-regular;
+    font-size: 14px;
+    line-height: 20px;
+    color: $color-white;
+  }
+}

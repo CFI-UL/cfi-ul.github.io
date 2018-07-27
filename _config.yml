@@ -11,8 +11,10 @@ description_suite: >
   à l’affut de tout ce qui se passe à l’intérieur du club! Soit nos formations,
   ateliers, conférences et tout autre événement que nos membres proposent ou
   veulent participer!
-# contact:
-#   github: https://github.com/CFI-UL
+
+sponsors_document_name: "Plan de commandite.pdf"
+sponsors_document_path: "assets/documents/2018 - Plan de commandite - FR.pdf"
+email: contact@cfiul.ca
 
 # If you want to link only specific pages in your header, uncomment
 # this and add the path to the pages in order as they should show up

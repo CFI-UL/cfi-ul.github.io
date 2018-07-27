@@ -1,0 +1,22 @@
+.link {
+  font-family: $font-family-text;
+  color: $color-white;
+  text-decoration: none;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: $font-family-title;
+  font-size: 12px;
+  font-weight: bold;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-right: 16px;
+  padding-left: 16px;
+  height: 40px;
+  border: 1px solid $color-white;
+  color: $color-white;
+  text-decoration: none;
+}

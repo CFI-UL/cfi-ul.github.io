@@ -1,13 +1,19 @@
 [
   {
-    "name": "CSGames",
+    "name": "Hackfest",
     "year": "2018",
+    "image": "assets/images/hackfest_logo.png",
+    "url": "https://hackfest.ca/"
+  },
+  {
+    "name": "CSGames",
+    "year": "2019",
     "image": "assets/images/csgames_logo.png",
     "url": "https://csgames.org/"
   },
   {
     "name": "NorthSec",
-    "year": "2018",
+    "year": "2019",
     "image": "assets/images/nsec_logo.png",
     "url": "https://www.nsec.io/"
   }

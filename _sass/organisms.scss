@@ -1,0 +1,118 @@
+.landing {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  height: 100vh;
+
+  &__image {
+    width:auto;
+    height:auto;
+    max-width:100%;
+    max-height:60vh;
+
+    // @include breakpoint(tablet) {
+    //   width: 285px;
+    // }
+  }
+}
+
+.section {
+  margin-top: 64px;
+  margin-bottom: 64px;
+
+  @include breakpoint(tablet) {
+    margin-top: 128px;
+    margin-bottom: 128px;
+  }
+
+  &__title {
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+
+  &__title, &__content {
+    margin-left: 16px;
+    margin-right: 16px;
+
+    @include breakpoint(tablet) {
+      margin-left: 32px;
+      margin-right: 32px;
+    }
+
+    @include breakpoint(laptop) {
+      margin-left: 64px;
+      margin-right: 64px;
+    }
+  }
+}
+
+
+.footer {
+  @include container;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 16px;
+    margin-right: 16px;
+
+    @include breakpoint(tablet) {
+      margin-left: 32px;
+      margin-right: 32px;
+    }
+
+    @include breakpoint(laptop) {
+      margin-left: 64px;
+      margin-right: 64px;
+    }
+  }
+
+  &__sections {
+    @include breakpoint(tablet) {
+      flex-direction: row;
+    }
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  &__section-contact {
+    @include breakpoint(tablet) {
+      flex: 2;
+      padding-right: 30px;
+    }
+    padding-right: 0px;
+  }
+
+  &__section-social {
+    @include breakpoint(tablet) {
+      flex: 1;
+      padding-left: 30px;
+      margin-top: 0px;
+    }
+    margin-top: 64px;
+    margin-bottom: 32px;
+    padding-left: 0px;
+  }
+
+  &__social-icons {
+    padding-top: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__social-icon {
+    width: 32px;
+    height: 32px;
+    margin-right: 16px;
+  }
+
+  &__copyright {
+    font-size: 11px;
+    font-weight: $font-light;
+    color: $color-gray;
+  }
+}

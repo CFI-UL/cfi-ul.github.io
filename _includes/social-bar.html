@@ -1,0 +1,10 @@
+<div class="social-bar js_menu">
+  {% for contact in site.data.contact %}
+    <a href="{{ contact.url }}">
+      <img
+        class="social-bar__item"
+        src="assets/images/{{ contact.name }}.png"
+        alt="{{ contact.name }}">
+    </a>
+  {% endfor %}
+</div>

@@ -1,0 +1,127 @@
+---
+layout: default
+---
+<div id="landing" class="landing">
+  <img class="landing__image" src="assets/images/CFI-logo-04.png">
+  <a class="button" href="#title">En savoir plus</a>
+</div>
+
+<div id="title" class="section">
+  <h1 class="section__title">
+    Compétitions et formations informatiques de l’université laval
+  </h1>
+</div>
+
+<div id="about" class="section">
+  <h2 class="section__title">
+    qui_sommes-nous?
+  </h2>
+  <div class="section__content">
+    <p>
+      Nous sommes un groupe de passionnés en informatique qui se sont regroupés pour participer aux différentes compétitions dans notre domaine. Si vous êtes étudiants et que vous avez un intérêt en informatique, venez faire un tour et il nous fera plaisir de vous guider pour exploiter votre plein potentiel!
+    </p>
+    <p>
+      Le groupe a été créé en septembre 2017 par des étudiants qui veulent voir leur université briller parmi les autres! Connectez-vous sur notre Slack pour être à l’affut de tout ce qui se passe à l’intérieur du club! Soit nos formations, ateliers, conférences et tout autre événement que nos membres proposent ou veulent participer!
+    </p>
+  </div>
+</div>
+
+<div id="join" class="section">
+  <h2 class="section__title">
+    joignez_le_CFI
+  </h2>
+  <div class="section__content">
+    <p>
+      Le CFI est une opportunité pour tous les étudiants d’être entouré d’une communauté de personnes passionnées qui cherche comme vous à apprendre et à se perfectionner.
+    </p>
+    <p>
+      En joignant le CFI, vous aurez la chance :
+    </p>
+    <ul class="list">
+      <li class="list__item">De participer à des événements et à des ateliers formateurs</li>
+      <li class="list__item">De participer à des compétitions</li>
+      <li class="list__item">D’être entourer de personnes passionnées par leur domaine</li>
+    </ul>
+    <p>
+      {% assign contact_slack = site.data.contact | where_exp:"item", "item.name contains slack" %}
+      Connectez-vous à notre <a href="{{ contact_slack.url }}">Slack</a> afin de ne pas manquer les prochains ateliers et compétitions.
+    </p>
+  </div>
+</div>
+
+<div id="next-events" class="section">
+  <h2 class="section__title">
+    prochains_événements
+  </h2>
+  <div class="section__content">
+    <div class="events">
+      {% for event in site.data.events %}
+      <div class="event">
+        <a class="event__image-container" href="{{ event.url }}">
+          <img src="{{ event.image }}" alt="{{ event.name }}">
+        </a>
+        <a class="event__name" href="{{ event.url }}">
+          {{ event.name }}
+        </a>
+        <div class="event__date">
+          {{ event.year }}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+<div id="hall-of-fame" class="section">
+  <h2 class="section__title">
+    temple_de_la_renommée
+  </h2>
+  {% assign hall_of_fame_by_year = site.data.hall-of-fame | group_by:"year" %}
+  {% for hall_of_fame in hall_of_fame_by_year %}
+  <div class="hall-of-fame__group">
+    <h2 class="hall-of-fame__year">
+      {{ hall_of_fame.name }}
+    </h2>
+    {% for fame in hall_of_fame.items %}
+      <div class="hall-of-fame__fame">
+        <div class="hall-of-fame__info">
+            <h4 class="hall-of-fame__title">
+              {{ fame.name }}
+            </h4>
+            <div class="hall-of-fame__position">
+              {{ fame.position }}
+            </div>
+        </div>
+        <div class="hall-of-fame__sub-positions">
+          {% for sub-position in fame.sub-positions %}
+            <div class="hall-of-fame__sub-position">
+              <div class="hall-of-fame__sub-position-name">
+                {{ sub-position.name }}
+              </div>
+              <div class="hall-of-fame__sub-position-position">
+                {{ sub-position.position }}
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+  {% endfor %}
+</div>
+
+<div id="sponsors" class="section">
+  <h2 class="section__title">
+    partenaires
+  </h2>
+  <div class="section__content">
+    <p>
+      Un partenariat avec le CFI nous permettrait de financer les activités pour nos membres tels que la participation à des compétitions. Vos contributions nous permettront aussi l'achat de matériel promotionnel dans le but de faire rayonner l'Université Laval dans le domaine de l'informatique.
+    </p>
+    <div class="sponsors__actions">
+      <a href="{{ site.sponsors_document_path | relative_url }}" target="_blank" class="button">
+        {{ site.sponsors_document_name }}
+      </a>
+    </div>
+  </div>
+</div>

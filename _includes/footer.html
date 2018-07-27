@@ -1,5 +1,26 @@
-<footer class="site-footer">
-  <div class="site-footer__content container container_large">
-    © 2017 Compétitions et formations informatiques de l’Université Laval
+<footer class="footer">
+  <div class="footer__content">
+    <div id="contact" class="footer__sections">
+      <div class="footer__section-contact">
+        <h2>contact</h2>
+        <p>Pour toutes informations, vous pouvez nous contacter à <a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+      </div>
+      <div class="footer__section-social">
+        <h2>suivez-nous</h2>
+        <div class="footer__social-icons">
+          {% for contact in site.data.contact %}
+            <a href="{{ contact.url }}">
+              <img
+                class="footer__social-icon"
+                src="assets/images/{{ contact.name }}.png"
+                alt="{{ contact.name }}">
+            </a>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+    <p class="footer__copyright">
+      © 2018 CFIUL
+    </p>
   </div>
 </footer>
