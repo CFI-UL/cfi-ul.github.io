@@ -193,3 +193,16 @@
     align-items: center;
   }
 }
+
+.list {
+  margin-left: 2em;
+  list-style: disc;
+
+  &__item {
+    font-family: $font-family-text;
+    font-weight: $font-regular;
+    font-size: 14px;
+    line-height: 20px;
+    color: $color-white;
+  }
+}
