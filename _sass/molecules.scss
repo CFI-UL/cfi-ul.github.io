@@ -186,6 +186,12 @@
 }
 
 .sponsors {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+
   &__actions {
     display: flex;
     flex-direction: row;
@@ -204,5 +210,15 @@
     font-size: 14px;
     line-height: 20px;
     color: $color-white;
+  }
+}
+
+.sponsor {
+  &__image {
+    display: block;
+    max-height: 80px;
+    width: auto;
+    height: auto;
+    margin: 0.5rem 1rem;
   }
 }
