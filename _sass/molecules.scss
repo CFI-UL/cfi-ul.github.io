@@ -186,6 +186,7 @@
 }
 
 .sponsors {
+  margin: 1rem 0;
   display: flex;
   justify-content: center;
   flex-direction: row;
@@ -218,6 +219,6 @@
     max-height: 80px;
     width: auto;
     height: auto;
-    margin: 1rem;
+    margin: 0.5rem 1rem;
   }
 }
