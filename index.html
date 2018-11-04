@@ -130,7 +130,7 @@ layout: default
     <div class="sponsors">
       {% for sponsor in site.data.sponsors %}
         <a href="{{ sponsor.url }}">
-          <img class="sponsor__image" src="{{ sponsor.image_url }}" alt="{{ sponsor.name }}"/>
+          <img style="max-height: {{ sponsor.height }}px;" class="sponsor__image" src="{{ sponsor.image_url }}" alt="{{ sponsor.name }}"/>
         </a>
       {% endfor %}
     </div>
