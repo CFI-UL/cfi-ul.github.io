@@ -1,3 +1,8 @@
 - name: Kimoby
   url: https://www.kimoby.com
   image_url: assets/images/sponsors/kimoby.png
+  height: 80
+- name: Levio
+  url: https://www.levio.ca/
+  image_url: assets/images/sponsors/levio.png
+  height: 95
