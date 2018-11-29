@@ -10,3 +10,7 @@
   url: https://www.coveo.com/
   image_url: assets/images/sponsors/coveo.png
   height: 85
+- name: Desjardins
+  url: https://www.desjardins.com/
+  image_url: assets/images/sponsors/desjardins.png
+  height: 120
