@@ -2,15 +2,29 @@
   url: https://www.kimoby.com/
   image_url: assets/images/sponsors/kimoby.png
   height: 80
+  background: 'initial'
+  padding: 'initial'
 - name: Levio
   url: https://www.levio.ca/
   image_url: assets/images/sponsors/levio.png
   height: 95
+  background: 'initial'
+  padding: 'initial'
 - name: Coveo
   url: https://www.coveo.com/
   image_url: assets/images/sponsors/coveo.png
   height: 85
+  background: 'initial'
+  padding: 'initial'
 - name: Desjardins
   url: https://www.desjardins.com/
   image_url: assets/images/sponsors/desjardins.png
   height: 120
+  background: 'initial'
+  padding: 'initial'
+- name: Nexapp
+  url: https://www.nexapp.ca/
+  image_url: assets/images/sponsors/nexapp.png
+  height: 96
+  background: 'white'
+  padding: '1em'
