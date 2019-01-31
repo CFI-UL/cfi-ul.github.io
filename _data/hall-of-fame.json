@@ -1,8 +1,20 @@
 [
   {
+    "name": "Coveo Blitz",
+    "year": "2019",
+    "position": "1ère et 3ème position",
+    "url": ""
+  },
+  {
     "name": "Hackfest",
     "year": "2018",
     "position": "1ère et 11ème position",
+    "url": ""
+  },
+  {
+    "name": "OWASP CTF",
+    "year": "2018",
+    "position": "1ère et 2ème position",
     "url": ""
   },
   {
@@ -65,6 +77,12 @@
     "name": "Hackfest",
     "year": "2017",
     "position": "14ème position",
+    "url": ""
+  },
+  {
+    "name": "OWASP CTF",
+    "year": "2017",
+    "position": "1ère position",
     "url": ""
   },
   {
