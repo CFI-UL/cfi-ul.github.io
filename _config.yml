@@ -29,5 +29,6 @@ exclude:
   - Gemfile
   - Gemfile.lock
 
-plugins:
+gems:
+  - jekyll-email-protect
   - jekyll-seo-tag
