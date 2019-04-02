@@ -1,5 +1,53 @@
 [
   {
+    "name": "CSGames",
+    "year": "2019",
+    "position": "3ième et 8ième position",
+    "url": "",
+    "sub-positions": [
+      {
+        "name": "National Bank - Application Security",
+        "position": "1ère position"
+      },
+      {
+        "name": "CSE - Security",
+        "position": "1ère position"
+      },
+      {
+        "name": "Reverse Engineering",
+        "position": "1ère position"
+      },
+      {
+        "name": "Articial Intelligence",
+        "position": "2ème position"
+      },
+      {
+        "name": "Team Software Engineering",
+        "position": "2ème position"
+      },
+      {
+        "name": "PSC - Web",
+        "position": "2ème position"
+      },
+      {
+        "name": "Functional Programming",
+        "position": "3ème position"
+      },
+      {
+        "name": "DevOps",
+        "position": "3ème position"
+      },
+      {
+        "name": "Puzzle Heros",
+        "position": "3ème position"
+      },
+      {
+        "name": "Participation",
+        "position": "3ème position"
+      }
+    ]
+  },
+  {
     "name": "Coveo Blitz",
     "year": "2019",
     "position": "1ère et 3ème position",
