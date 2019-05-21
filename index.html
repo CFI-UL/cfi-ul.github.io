@@ -58,6 +58,11 @@ layout: default
   </h2>
   <div class="section__content">
     <div class="events">
+      {% if site.data.events.size == 0 %}
+      <p>
+        Aucun événement pour le moment.
+      </p>
+      {% endif %}
       {% for event in site.data.events %}
       <div class="event">
         <a class="event__image-container" href="{{ event.url }}">
