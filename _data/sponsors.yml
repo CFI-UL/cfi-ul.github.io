@@ -28,3 +28,7 @@
   height: 96
   background: 'white'
   padding: '1em'
+- name: INGENO
+  url: https://www.ingeno.ca/
+  image_url: assets/images/sponsors/ingeno.png
+  height: 96
