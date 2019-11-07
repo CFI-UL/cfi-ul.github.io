@@ -1,5 +1,25 @@
 [
   {
+    "name": "Hackfest",
+    "year": "2019",
+    "position": "",
+    "url": "",
+    "sub-positions": [
+      {
+        "name": "CTF Pro",
+        "position": "2ème et 4ème position"
+      },
+      {
+        "name": "CTF Régulier",
+        "position": "11ème, 26ème et 38ème position"
+      },
+      {
+        "name": "Brainfuck",
+        "position": "1ère position"
+      }
+    ]
+  },
+  {
     "name": "iHack",
     "year": "2019",
     "position": "1ère et 11ème position",
@@ -66,10 +86,20 @@
     "url": ""
   },
   {
-    "name": "Hackfest",
+    "name": "Hackfest CTF",
     "year": "2018",
-    "position": "1ère et 11ème position",
-    "url": ""
+    "position": "",
+    "url": "",
+    "sub-positions": [
+      {
+        "name": "CTF",
+        "position": "1ère et 11ème position"
+      },
+      {
+        "name": "Brainfuck",
+        "position": "2ème position"
+      }
+    ]
   },
   {
     "name": "OWASP CTF",
