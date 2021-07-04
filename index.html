@@ -46,8 +46,8 @@ layout: default
       <li class="list__item">D’être entouré de personnes passionnées par leur domaine</li>
     </ul>
     <p>
-      {% assign contact_slack = site.data.contact | where:"name", "slack" | first %}
-      Connectez-vous à notre <a href="{{ contact_slack.url }}">Slack</a> afin de ne pas manquer les prochains ateliers et compétitions.
+      {% assign contact_discord = site.data.contact | where:"name", "discord" | first %}
+      Connectez-vous à notre <a href="{{ contact_discord.url }}">Discord</a> afin de ne pas manquer les prochains ateliers et compétitions.
     </p>
   </div>
 </div>

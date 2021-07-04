@@ -1,5 +1,5 @@
-- name: slack
-  url: http://slack.cfiul.ca/
+- name: discord
+  url: https://discord.gg/8MJJeRQC53
 - name: facebook
   url: https://www.facebook.com/cfiul/
 - name: twitter
