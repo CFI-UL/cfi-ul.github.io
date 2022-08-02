@@ -26,8 +26,8 @@
   url: https://www.nexapp.ca/
   image_url: assets/images/sponsors/nexapp.png
   height: 96
-  background: 'white'
-  padding: '1em'
+  background: 'initial'
+  padding: 'initial'
 - name: INGENO
   url: https://www.ingeno.ca/
   image_url: assets/images/sponsors/ingeno.png
