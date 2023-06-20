@@ -1,8 +1,19 @@
 ---
 layout: default
 ---
+
 <div id="landing" class="landing">
-  <img class="landing__image" src="assets/images/CFI-logo-04.png">
+  <p style="font-size: x-large; color: white">
+    <span style="color: red">Disclaimer:</span> Le CFI est aujourd'hui archivé
+    et n'est pas maintenu. Il n'est pas prévu de le maintenir davantage. Pour
+    profiter de l'héritage du CFI, accédez à:
+    <a href="https://github.com/CFI-UL">Organisation Github du CFI</a>.
+  </p>
+  <p style="font-size: x-large; color: white">
+    Pour rejoindre les clubs informatiques de l'Université Laval, rejoignez:
+    <a href="https://discord.gg/qfsWpuRnEQ">Discord des clubs</a>.
+  </p>
+  <img class="landing__image" src="assets/images/CFI-logo-04.png" />
   <a class="button" href="#title">En savoir plus</a>
 </div>
 
@@ -13,111 +24,120 @@ layout: default
 </div>
 
 <div id="about" class="section">
-  <h2 class="section__title">
-    qui_sommes-nous?
-  </h2>
+  <h2 class="section__title">qui_sommes-nous?</h2>
   <div class="section__content">
     <p>
-      Le CFI (Compétitions et Formations Informatiques) est la première délégation représentant les étudiants du domaine informatique de l'Université Laval dans les nombreuses compétitions informatiques d'Amérique du Nord.
+      Le CFI (Compétitions et Formations Informatiques) est la première
+      délégation représentant les étudiants du domaine informatique de
+      l'Université Laval dans les nombreuses compétitions informatiques
+      d'Amérique du Nord.
     </p>
     <p>
-      Cette délégation a pour but de former ses membres dans divers sujets dont l'IA, la sécurité informatique et le développement de jeux vidéo, en encourageant l'apprentissage par l'expérience pratique.
+      Cette délégation a pour but de former ses membres dans divers sujets dont
+      l'IA, la sécurité informatique et le développement de jeux vidéo, en
+      encourageant l'apprentissage par l'expérience pratique.
     </p>
     <p>
-      Pour ce faire, le CFI organise de nombreux ateliers d'une à trois heures, des journées de compétitions et des conférences. Le CFI encourage la participation à plusieurs évènements comme les hackathons, les coding dojos, les CTFs et les compétitions inter-universitaires.
+      Pour ce faire, le CFI organise de nombreux ateliers d'une à trois heures,
+      des journées de compétitions et des conférences. Le CFI encourage la
+      participation à plusieurs évènements comme les hackathons, les coding
+      dojos, les CTFs et les compétitions inter-universitaires.
     </p>
   </div>
 </div>
 
 <div id="join" class="section">
-  <h2 class="section__title">
-    joignez_le_CFI
-  </h2>
+  <h2 class="section__title">joignez_le_CFI</h2>
   <div class="section__content">
     <p>
-      Le CFI est une opportunité pour tous les étudiants d’être entouré d’une communauté de personnes passionnées qui cherchent comme vous à apprendre et à se perfectionner.
+      Le CFI est une opportunité pour tous les étudiants d’être entouré d’une
+      communauté de personnes passionnées qui cherchent comme vous à apprendre
+      et à se perfectionner.
     </p>
-    <p>
-      En joignant le CFI, vous aurez la chance :
-    </p>
+    <p>En joignant le CFI, vous aurez la chance :</p>
     <ul class="list">
-      <li class="list__item">De participer à des événements et à des ateliers formateurs</li>
+      <li class="list__item">
+        De participer à des événements et à des ateliers formateurs
+      </li>
       <li class="list__item">De participer à des compétitions</li>
-      <li class="list__item">D’être entouré de personnes passionnées par leur domaine</li>
+      <li class="list__item">
+        D’être entouré de personnes passionnées par leur domaine
+      </li>
     </ul>
     <p>
-      {% assign contact_discord = site.data.contact | where:"name", "discord" | first %}
-      Connectez-vous à notre <a href="{{ contact_discord.url }}">Discord</a> afin de ne pas manquer les prochains ateliers et compétitions.
+      {% assign contact_discord = site.data.contact | where:"name", "discord" |
+      first %} Connectez-vous à notre
+      <a href="{{ contact_discord.url }}">Discord</a> afin de ne pas manquer les
+      prochains ateliers et compétitions.
     </p>
   </div>
 </div>
 
 <div id="hall-of-fame" class="section">
-  <h2 class="section__title">
-    temple_de_la_renommée
-  </h2>
+  <h2 class="section__title">temple_de_la_renommée</h2>
   {% assign hall_of_fame_by_year = site.data.hall-of-fame | group_by:"year" %}
   {% for hall_of_fame in hall_of_fame_by_year %}
   <div class="hall-of-fame__group">
-    <h2 class="hall-of-fame__year">
-      {{ hall_of_fame.name }}
-    </h2>
+    <h2 class="hall-of-fame__year">{{ hall_of_fame.name }}</h2>
     {% for fame in hall_of_fame.items %}
-      <div class="hall-of-fame__fame">
-        <div class="hall-of-fame__info">
-            <h4 class="hall-of-fame__title">
-              {{ fame.name }}
-            </h4>
-            <div class="hall-of-fame__position">
-              {{ fame.position }}
-            </div>
-        </div>
-        <div class="hall-of-fame__sub-positions">
-          {% for sub-position in fame.sub-positions %}
-            <div class="hall-of-fame__sub-position">
-              <div class="hall-of-fame__sub-position-name">
-                {{ sub-position.name }}
-              </div>
-              <div class="hall-of-fame__sub-position-position">
-                {{ sub-position.position }}
-              </div>
-            </div>
-          {% endfor %}
-        </div>
+    <div class="hall-of-fame__fame">
+      <div class="hall-of-fame__info">
+        <h4 class="hall-of-fame__title">{{ fame.name }}</h4>
+        <div class="hall-of-fame__position">{{ fame.position }}</div>
       </div>
+      <div class="hall-of-fame__sub-positions">
+        {% for sub-position in fame.sub-positions %}
+        <div class="hall-of-fame__sub-position">
+          <div class="hall-of-fame__sub-position-name">
+            {{ sub-position.name }}
+          </div>
+          <div class="hall-of-fame__sub-position-position">
+            {{ sub-position.position }}
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
     {% endfor %}
   </div>
   {% endfor %}
 </div>
 
 <div id="calendar" class="section">
-  <h2 class="section__title">
-    calendrier
-  </h2>
-  <div>
-    {% include google-calendar.html %}
-  </div>
+  <h2 class="section__title">calendrier</h2>
+  <div>{% include google-calendar.html %}</div>
 </div>
 
 <div id="sponsors" class="section">
-  <h2 class="section__title">
-    partenaires
-  </h2>
+  <h2 class="section__title">partenaires</h2>
   <div class="section__content">
     <div class="sponsors">
       {% for sponsor in site.data.sponsors %}
-        <a href="{{ sponsor.url }}">
-          <img style="max-height: {{ sponsor.height }}px; padding: {{ sponsor.padding }}; background-color: {{ sponsor.background }};" class="sponsor__image" src="{{ sponsor.image_url }}" alt="{{ sponsor.name }}"/>
-        </a>
+      <a href="{{ sponsor.url }}">
+        <img
+          style="max-height: {{ sponsor.height }}px; padding: {{ sponsor.padding }}; background-color: {{ sponsor.background }};"
+          class="sponsor__image"
+          src="{{ sponsor.image_url }}"
+          alt="{{ sponsor.name }}"
+        />
+      </a>
       {% endfor %}
     </div>
   </div>
   <div class="section__content">
     <p>
-      Un partenariat avec le CFI nous permettrait de financer les activités pour nos membres telles que la participation à des compétitions. Vos contributions nous permettront aussi l'achat de matériel promotionnel dans le but de faire rayonner l'Université Laval dans le domaine de l'informatique.
+      Un partenariat avec le CFI nous permettrait de financer les activités pour
+      nos membres telles que la participation à des compétitions. Vos
+      contributions nous permettront aussi l'achat de matériel promotionnel dans
+      le but de faire rayonner l'Université Laval dans le domaine de
+      l'informatique.
     </p>
     <div class="sponsors__actions">
-      <a href="{{ site.sponsors_document_path | relative_url }}" target="_blank" class="button">
+      <a
+        href="{{ site.sponsors_document_path | relative_url }}"
+        target="_blank"
+        class="button"
+      >
         {{ site.sponsors_document_name }}
       </a>
     </div>
